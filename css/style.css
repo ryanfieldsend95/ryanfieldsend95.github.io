@@ -1,0 +1,559 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#000000;
+}
+
+/* Global */
+.container{
+  background-color: #000000;
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+  color: #ffffff;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.coverimg{
+  width:75%;
+  margin:0;
+  overflow:hidden;
+}
+
+.smedia{
+  padding: 10px;
+  width: 5%;
+  height: 5%;
+}
+
+/* Header **/
+header{
+  background:#000000;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#8b0000 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#8b0000;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#8b0000;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  text-align:center;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  color: #ffffff;
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+  padding-left:13%;
+}
+
+#boxes .box img{
+  width:100%;
+}
+
+/* Sets the design of the button used throughout the site */
+.button {
+    background-color: #8b0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#8b0000;
+  text-align: center;
+  min-height: 70px;
+}
+footer a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+footer li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+footer nav{
+  float:right;
+}
+
+footer .highlight, footer .currentfooter a{
+  color:#000000;
+  font-weight:bold;
+}
+
+footer a:hover{
+  color:#000000;
+  font-weight:bold;
+}
+
+
+
+/* Gallery styling*/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* background style */
+.gallery {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Content */
+.gallery_content {
+  position: center;
+  background-color: #000000;
+  margin: auto;
+  padding 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #000000;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+/* End of gallery style */
+
+
+
+/* customiser */
+.left1, .right1
+{
+	cursor:pointer;
+	position: relative;
+   display: inline-block;
+
+	}
+
+.badge1
+{
+	height:13px;width:13px;padding:2px;
+	}
+
+
+	.content1
+	{
+		max-width:980px;
+	margin:auto;
+	}
+
+
+
+
+.section1
+	{
+		margin-top:16px!important;
+		margin-bottom:16px!important;
+
+	}
+
+
+
+
+.center1
+{
+	text-align:center!important;
+	}
+.center1
+{
+	display:inline-block;
+	width:auto;
+	}
+
+	.Slideshow1, .panel1
+	{
+		padding:0.01em 16px;
+
+	}
+	.panel1
+	{
+		margin-top:16px;
+		margin-bottom:16px;
+		}
+	.large1
+	{
+		font-size:38px!important;
+		}
+	.text-white1,.hover-text-white1:hover
+	{
+		color:Blue!important;
+		}
+	.display-bottommiddle1
+	{
+		position:absolute;left:50%;
+		bottom:0;transform:translate(-50%,0%);
+		-ms-transform:translate(-50%,0%);
+		}
+
+	.display-container1:hover .display-hover1
+	{
+		display:block;
+
+	}.display-container1:hover span.display-hover1
+	{
+		display:inline-block;
+		}
+	.display-container1
+	{
+		position:relative;
+		}
+	.left-align1
+	{
+		text-align:left!important;
+	}
+	.left1
+	{
+		float:left!important;
+	}
+	.hover-text-khaki1:hover
+	{
+		color:#b4aa50!important;
+		}
+	.right1
+	{
+		float:right!important;
+		}
+
+    #customisertxt
+    {
+    	position: relative;
+        top: 60px;
+    	right: 315px;
+
+    }
+    #Headertxt
+    {
+
+    	font-family:serif;
+    	font-size: 15px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 500;
+    	line-height: 26.4px;
+    	position: absolute;
+    	top: -3px;
+    	right:100px;
+    }
+
+    #customtext
+    {
+    	font-family:erif;
+    	font-size: 20px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 400;
+    	line-height: 20px;
+    	position: absolute;
+    	top: 75px;
+    	right: 300px;
+    }
+
+
+
+    #T-Shirtpos
+    {
+    	position: absolute;
+    	top: 70px;
+    	left: 100px;
+
+    }
+
+    .T-shirt
+
+    {
+    	display: none;
+    	position: absolute;
+
+
+    }
+    .T-shirt[id='BlackT'] {
+    	display: block;
+    }
+    #sliderlogos
+
+    {
+
+    	position: absolute;
+    	left: 320px;
+    	top: 150px;
+    }
+    #Customiserpic
+    {
+    position: absolute;
+    	top: 70px;
+    	right: 100px;
+
+    }
+
+    #customtext1
+    {
+    	font-family: 'Vidaloka', serif;
+    	font-size: 20px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 400;
+    	line-height: 20px;
+    	position: absolute;
+    	top: 135px;
+    	right: 300px;
+    }
+
+    #Customiserpic1
+    {
+    position: absolute;
+    	top: 140px;
+    	right: 100px;
+
+    }
+
+    #customtext2
+    {
+    	font-family: 'Vidaloka', serif;
+    	font-size: 20px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 400;
+    	line-height: 20px;
+    	position: absolute;
+    	top: 195px;
+    	right: 300px;
+    }
+
+    #Customiserpic2
+    {
+    position: absolute;
+    	top: 200px;
+    	right: 100px;
+
+    }
+
+    #nextCustomiser {
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    #lastCustomiser {
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+
+    #customtext3
+    {
+    	font-family: 'Vidaloka', serif;
+    	font-size: 20px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 400;
+    	line-height: 20px;
+    	position: absolute;
+    	top: 265px;
+    	right: 300px;
+    }
+
+    #Customiserpic3
+    {
+    position: absolute;
+    	top: 270px;
+    	right: 100px;
+
+    }
+
+    #customtext4
+    {
+    position: absolute;
+    	top: 650px;
+    	left: 485px;
+    	text-align: center;
+    }
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  header{
+    padding-bottom:20px;
+  }
+}

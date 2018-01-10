@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DevilDriver | Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><img class="logo" src="./img/logo.png" alt="Image Unavailble"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="gallery.html">Gallery</a></li>
+            <li><a href="theband.html">The Band</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="criticalLog.html">Critical Log</a></li>
+            <li><a href="demo.html">DEMO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Click Any Image To View The Gallery!</h1>
+      </div>
+    </section>
+
+      <div class="row">
+        <div class="column">
+          <img src="./img/nealtiemann.jpg" style="width:60%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+
+        <div class="column">
+          <img src="./img/diegoibarra.jpg" style="width:60%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+
+        <div class="column">
+          <img src="./img/mikespreitzer.jpg" style="width:60%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="./img/dezfafara.jpg" style="width:60%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+        <div class="column">
+          <img src="./img/austindamond.jpg" style="width:60%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+        <div class="column">
+          <img src="./img/fullband.jpg" style="width:60%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="Image Unavailble">
+        </div>
+      </div>
+
+      <div id="myGallery" class="gallery">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="gallery_content">
+
+          <div class="slides">
+            <div class="numbertext">1 / 9</div>
+            <img src="./img/nealtiemann.jpg" style="width:40%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">2 / 9</div>
+            <img src="./img/diegoibarra.jpg" style="width:40%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">3 / 9</div>
+            <img src="./img/mikespreitzer.jpg" style="width:40%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">4 / 9</div>
+            <img src="./img/dezfafara.jpg" style="width:60%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">5 / 9</div>
+            <img src="./img/austindamond.jpg" style="width:45%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">6 / 9</div>
+            <img src="./img/fullband.jpg" style="width:50%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">7 / 9</div>
+            <img src="./img/devildriver_wide.jpg" style="width:75%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">8 / 9</div>
+            <img src="./img/devildriver_cover_white.jpg" style="width:75%" alt="Image Unavailble">
+          </div>
+
+          <div class="slides">
+            <div class="numbertext">9 / 9</div>
+            <img src="./img/dezfafara_wide.jpg" style="width:75%" alt="Image Unavailble">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+  <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="currentfooter"><a href="gallery.html">Gallery</a></li>
+          <li><a href="theband.html">The Band</a></li>
+          <li><a href="tourdates.html">Tour Dates</a></li>
+          <li><a href="releases.html">Releases</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="criticalLog.html">Critical Log</a></li>
+          <li><a href="demo.html">DEMO</a></li>
+        </ul>
+      </nav>
+  </footer>
+  </body>
+</html>
