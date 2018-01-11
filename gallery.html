@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <!-- Displays in the tab at the top of the browser -->
     <title>DevilDriver | Gallery</title>
+    <!-- links the css stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
-
   </head>
   <body>
+      <!-- Page header. Contains a logo of the band and a nav bar -->
     <header>
       <div class="container">
         <div id="branding">
           <a href="index.html"><img class="logo" src="./img/logo.png" alt="Image Unavailble"></a>
         </div>
+        <!-- Nav bar is used to link to other pages throughout the website -->
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -28,13 +31,14 @@
         </nav>
       </div>
     </header>
-
+<!-- gallery starts here -->
     <section id="showcase">
       <div class="container">
         <h1>Click Any Image To View The Gallery!</h1>
       </div>
     </section>
 
+<!-- preview images on webpage for gallery -->
       <div class="row">
         <div class="column">
           <img src="./img/nealtiemann.jpg" style="width:60%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Image Unavailble">
@@ -61,6 +65,7 @@
         </div>
       </div>
 
+<!-- gallery opens up when an image is clicked -->
       <div id="myGallery" class="gallery">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="gallery_content">
@@ -114,6 +119,8 @@
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+
+      <!-- footer is the same as the header without the band logo -->
   <footer>
       <nav>
         <ul>
